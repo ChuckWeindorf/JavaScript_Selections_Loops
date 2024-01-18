@@ -18,20 +18,36 @@ console.log("EXERCISE 3:\n==========\n");
 let vint3 = 1;
 while (vint3 < 101) {
     if (vint3 % 2) {console.log(vint3)}
-    vint3++
-}
+    vint3++;
+    }
+let vint3a = 1;
+do  {
+    if (vint3a % 2) {console.log(vint3a)}
+      vint3a++
+    } 
+    while (vint3a < 101);
+
+let vint3c = 1;
+while (vint3c < 101) {
+    vstrAnswer = "";
+    if (vint3c % 3 == 0) {vstrAnswer = "FIZZ"};
+    if (vint3c % 5 == 0) {vstrAnswer += "BUZZ"};
+    if (vstrAnswer.length > 0) {console.log(vint3c + " " + vstrAnswer)};
+    vint3c++;
+    }    
+let vint3d = 1;
+do  {
+    vstrAnswer = "";
+    if (vint3d % 3 == 0) {vstrAnswer = "FIZZ"};
+    if (vint3d % 5 == 0) {vstrAnswer += "BUZZ"};
+    if (vstrAnswer.length > 0) {console.log(vint3d + " " + vstrAnswer)};
+    vint3d++;
+    }        
+    while (vint3d < 101);
+
 // Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");
-let vint4 = 1;
-while (vint4 < 101) {
-    vstrAnswer = "";
-    if (vint4 % 3 == 0) {vstrAnswer = "FIZZ"};
-    if (vint4 % 5 == 0) {vstrAnswer += "BUZZ"};
-    if (vstrAnswer.length > 0) {console.log(vint4 + " " + vstrAnswer)};
-    vint4++
-}
-// Exercise 5 Section
-console.log("EXERCISE 5:\n==========\n");
+
 let value = Math.round((Math.random() * 500)); 
 // creates a random number between 0 and 500
 let n = Math.round(Math.random() * (500 - 100) + 100); 
@@ -45,8 +61,8 @@ for (let vint5 = 0; vint5 <= n; vint5++)
     }
     else if (vint5 == n) {console.log("Did not find value");}
 }
-console.log("EXERCISE BONUS:\n==========\n");
-//Exercise Bous Section
+// Exercise 5 Section
+console.log("EXERCISE 5:\n==========\n");
 let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1); 
 // creates a random number between 1 and 10
 let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1); 
